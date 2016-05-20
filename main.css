@@ -233,22 +233,36 @@ form.js-profile-form input.js-cancel-edit-profile,
 .card-label-yellow {
 	background-color: hsla(60, 100%, 50%, 0.25) !important;
 }
-.card-label-neon {
+.card-label-lime {
 	background-color: hsla(90, 100%, 50%, 0.25) !important;
 }
 .card-label-green {
 	background-color: hsla(120, 100%, 50%, 0.25) !important;
 }
-.card-label-teal {
+/*.card-label-x {
 	background-color: hsla(150, 100%, 50%, 0.25) !important;
-}
-.card-label-cyan {
+}*/
+.card-label-sky {
 	background-color: hsla(180, 100%, 50%, 0.25) !important;
 }
-.card-label-x {
-	background-color: hsla(120, 100%, 50%, 0.25) !important;
-}
+/*.card-label-x {
+	background-color: hsla(210, 100%, 50%, 0.25) !important;
+}*/
 .card-label-blue {
 	background-color: hsla(240, 100%, 50%, 0.25) !important;
 }
-
+.card-label-purple {
+	background-color: hsla(270, 100%, 50%, 0.25) !important;
+}
+.card-label-purple {
+	background-color: hsla(300, 100%, 50%, 0.25) !important;
+}
+.card-label-pink {
+	background-color: hsla(330, 100%, 50%, 0.25) !important;
+}
+.card-label-black {
+	background-color: hsla(0, 0%, 0%, 0.25) !important;
+}
+.card-label-null {
+	background-color: hsla(0, 0%, 100%, 0.25) !important;
+}

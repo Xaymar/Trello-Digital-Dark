@@ -17,3 +17,4 @@ Digital Dark is a Stylish Theme for Trello, a project management application.
 * Now overrides global background, color and border-color with inherit.
 * Board Menu is now correctly styled as Layer 1 and above.
 * Board Menu Activity is now styled correctly.
+* Card Labels are styled too now.
