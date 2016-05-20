@@ -124,7 +124,8 @@ div.tabbed-pane-main-col a.big-link:hover,
 .window .js-format-help,
 .phenom,
 .list .list-card .badge.is-voted,
-/* Board Menu > Add Member Button */ div.board-menu a.button-link:hover {
+/* Board Menu > Add Member Button */ div.board-menu a.button-link:hover,
+/* Phenom Entry > Comment */ div.board-menu div.js-menu-action-list div.phenom div.current-comment {
     background: hsl(0, 0%, 20%) !important;
     color: hsl(0, 0%, 80%) !important;
     border-color: hsl(0, 0%, 15%) !important;
@@ -210,14 +211,44 @@ form.js-profile-form input.js-cancel-edit-profile,
 	background: hsl(0, 0%, 5%) !important;
 }
 
-/* Board Menu > Activity Entry */ div.board-menu div.phenom {
+/* Phenom Entry */ div.phenom {
 	margin-left: 0px;
 	margin-bottom: 2px;
 	padding: 10px 5px 8px 38px;
 }
-/* Board Menu > Activity Entry > Member */ div.board-menu div.phenom div.phenom-creator {
+/* Phenom Entry > Member */ div.phenom div.phenom-creator {
 	left: 5px;
 }
-/* Board Menu > Activity Entry > Member */ div.board-menu div.phenom.mod-other-type div.phenom-creator {
+/* Phenom Entry > Member */ div.phenom.mod-other-type div.phenom-creator {
 	left: 12px;
 }
+
+/* Card Labels */
+.card-label-red {
+	background-color: hsla(0, 100%, 50%, 0.25) !important;
+}
+.card-label-orange {
+	background-color: hsla(30, 100%, 50%, 0.25) !important;
+}
+.card-label-yellow {
+	background-color: hsla(60, 100%, 50%, 0.25) !important;
+}
+.card-label-neon {
+	background-color: hsla(90, 100%, 50%, 0.25) !important;
+}
+.card-label-green {
+	background-color: hsla(120, 100%, 50%, 0.25) !important;
+}
+.card-label-teal {
+	background-color: hsla(150, 100%, 50%, 0.25) !important;
+}
+.card-label-cyan {
+	background-color: hsla(180, 100%, 50%, 0.25) !important;
+}
+.card-label-x {
+	background-color: hsla(120, 100%, 50%, 0.25) !important;
+}
+.card-label-blue {
+	background-color: hsla(240, 100%, 50%, 0.25) !important;
+}
+
