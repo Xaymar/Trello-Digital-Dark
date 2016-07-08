@@ -16,11 +16,11 @@ Digital Dark Style by Michael Fabian 'Xaymar' Dirks <info@xaymar.com>.
 	...
 */
 
-* {
-	background-color: transparent !Important;
-	color: inherit !Important;
-	border-color: inherit !Important;
-}
+/** {
+	background-color: transparent !important;
+	color: inherit !important;
+	border-color: inherit !important;
+}*/
 
 /* -- Layer 0 -- */
 Layer-0,
@@ -43,7 +43,7 @@ a.boards-page-board-section-header-options-item /* Board buttons */,
 a.boards-page-board-section-header-options-item:hover span,
 div.boards-page-board-section a.quiet-button /* Create a new team... */,
 div.tabbed-pane-nav li.tabbed-pane-nav-item a.tabbed-pane-nav-item-button,
-div.tabbed-pane-main-col,
+/* Profile - Tab Area */ div.tabbed-pane-main-col,
 .tabbed-pane-header a.button-link,
 form.js-profile-form input, form.js-profile-form textarea,
 /* Board Menu */ div.board-menu,
@@ -80,13 +80,21 @@ div.tabbed-pane-main-col input.js-add-email,
 div.tabbed-pane-main-col input.js-log-out-other,
 div.tabbed-pane-main-col input.js-revoke,
 div.tabbed-pane-main-col a.big-link,
+/* Profile - Cards - Card */ .tabbed-pane-main-col .js-cards-content .list-card,
+/* Organization - Members - Find Members */ .tabbed-pane-main-col .org-members-page-layout .org-members-page-layout-sidebar input,
+/* Organization - Members - Add Members Button */ .tabbed-pane-main-col .org-members-page-layout .button-link,
+/* Organization - Settings - Business Class */ .tabbed-pane-main-col .org-bc-settings,
+/* Organization - Business Class - Input */ .tabbed-pane-main-col .credit-card-form input,  .tabbed-pane-main-col .credit-card-form .iframe-input,
 form.js-profile-form input:hover, form.js-profile-form textarea:hover,
 /* Board Menu > Member */ div.board-menu div.member,
 /* Board Menu > Add Member Button */ div.board-menu a.button-link,
 /* Board Menu > Board Navigation Buttons */ div.board-menu a.board-menu-navigation-item-link:hover,
 /* Board Menu > Power-Ups > Counter */ div.board-menu a.board-menu-navigation-item-link:hover span.js-enabled-power-up-count,
 /* Board Menu > Activity */ div.board-menu a.js-open-activity:hover,
-/* Board Menu > Activity Entry */ div.board-menu div.js-menu-action-list div.phenom {
+/* Board Menu > Activity Entry */ div.board-menu div.js-menu-action-list div.phenom,
+/* Window - Title */ .window .window-title textarea,
+/* Window - Description */ .window .description-content
+{
     background: hsl(0, 0%, 15%) !important;
     color: hsl(0, 0%, 70%) !important;
     border-color: hsl(0, 0%, 10%) !important;
@@ -111,6 +119,9 @@ div.tabbed-pane-main-col input.js-add-email:hover,
 div.tabbed-pane-main-col input.js-log-out-other:hover,
 div.tabbed-pane-main-col input.js-revoke:hover,
 div.tabbed-pane-main-col a.big-link:hover,
+/* Organization - Members - Find Members */ .tabbed-pane-main-col .org-members-page-layout .org-members-page-layout-sidebar input:hover,
+/* Organization - Members - Add Members Button */ .tabbed-pane-main-col .org-members-page-layout .button-link:hover,
+/* Organization - Business Class - Input */ .tabbed-pane-main-col .credit-card-form input:hover, .tabbed-pane-main-col .credit-card-form .iframe-input:hover,
 .checklist-item:hover,
 .window .action-comment,
 .window .comment-box,
@@ -125,7 +136,10 @@ div.tabbed-pane-main-col a.big-link:hover,
 .phenom,
 .list .list-card .badge.is-voted,
 /* Board Menu > Add Member Button */ div.board-menu a.button-link:hover,
-/* Phenom Entry > Comment */ div.board-menu div.js-menu-action-list div.phenom div.current-comment {
+/* Phenom Entry > Comment */ div.board-menu div.js-menu-action-list div.phenom div.current-comment, 
+/* Window - Title */ .window .window-title textarea.editing,
+/* Window - Description */ .window .description-content .edit textarea
+{
     background: hsl(0, 0%, 20%) !important;
     color: hsl(0, 0%, 80%) !important;
     border-color: hsl(0, 0%, 15%) !important;
@@ -147,7 +161,8 @@ a.js-new-tip:hover, a.js-tip:hover, .meta-link-list-item-link:hover,
 .window .dark-hover:hover .icon-sm,
 .window .js-format-help:hover,
 .phenom.mod-unread,
-.list .list-card:hover .badge.is-voted {
+.list .list-card:hover .badge.is-voted
+{
     background: hsl(0, 0%, 25%) !important;
     color: hsl(0, 0%, 90%) !important;
     border-color: hsl(0, 0%, 15%) !important;
