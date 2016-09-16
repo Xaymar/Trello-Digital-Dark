@@ -164,6 +164,7 @@ a.js-new-tip:hover, a.js-tip:hover, .meta-link-list-item-link:hover,
 .window .js-format-help:hover,
 .phenom.mod-unread,
 /* Card - Comment - Card Link */ .phenom .comment-container a.known-service-link,
+/* Card - Description - Card Link */ .window .card-detail-item a.known-service-link,
 .list .list-card:hover .badge.is-voted
 {
     background: hsl(0, 0%, 25%) !important;
@@ -174,7 +175,8 @@ a.js-new-tip:hover, a.js-tip:hover, .meta-link-list-item-link:hover,
 /* -- Layer 5 -- */
 Layer-5,
 .phenom.mod-unread:hover,
-/* Card - Comment - Card Link */ .phenom .comment-container a.known-service-link:hover
+/* Card - Comment - Card Link */ .phenom .comment-container a.known-service-link:hover,
+/* Card - Description - Card Link */ .window .card-detail-item a.known-service-link:hover
 {
     background: hsl(0, 0%, 30%) !important;
     color: hsl(0, 0%, 90%) !important;
