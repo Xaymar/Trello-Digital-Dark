@@ -34,3 +34,7 @@ Digital Dark is a Stylish Theme for Trello, a project management application.
 
 * Fixed certain styles not being applied.
 * Added styling for card links.
+
+** 16.09.2016 **
+
+* Fixed Card links in card description.
