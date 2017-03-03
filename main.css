@@ -106,6 +106,7 @@ Layer-3,
 a.header-btn:hover /* Header Button */,
 input.header-search-input:hover /* Header Search */, 
 .list .list-card:hover /* List Card */,
+/* List Card Details (Sticker) */ .list-card.is-stickered .list-card-stickers-area,
 a.list-header-menu-icon:hover /* Button: "..." */,
 span.list-card-operation /* Button: (pencil) */,
 div.pop-over /* Pop Overs */,
@@ -150,6 +151,7 @@ Layer-4,
 span.list-card-operation:hover /* Button: (pencil) */,
 div.window .button-link:hover /* Window Overlay: Button Links */,
 .boards-drawer input.js-search-boards:hover /* Board Search */,
+/* List Card Details (Sticker) */ .list-card.active-card.is-stickered .list-card-stickers-area,
 .boards-drawer .sidebar-section-header-toggle-icon:hover,
 .boards-drawer a.quiet-button:hover,
 .boards-drawer-header,
@@ -241,6 +243,12 @@ form.js-profile-form input.js-cancel-edit-profile,
 }
 /* Phenom Entry > Member */ div.phenom.mod-other-type div.phenom-creator {
 	left: 12px;
+}
+
+/* List Card Details (Sticker) */ .list-card .list-card-details,
+/* List Card Details (Sticker) */ .list-card.is-stickered .list-card-details,
+/* List Card Details (Sticker) */ .list-card.active-card.is-stickered .list-card-details {
+	background: none;
 }
 
 /* Card Labels */
