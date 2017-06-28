@@ -35,13 +35,15 @@ div.tabbed-pane-nav {
 /* -- Layer 1 -- */
 Layer-1,
 /* Header */ div#header,
-/* List */ div.list,
-/* List > Card Header */ div.list div.list-header ,
-a.open-card-composer /* Button: "Add a card" */,
-a.board-tile.mod-add /* "Create new board." */,
-a.boards-page-board-section-header-options-item /* Board buttons */,
-a.boards-page-board-section-header-options-item:hover span,
-div.boards-page-board-section a.quiet-button /* Create a new team... */,
+/* List */ .list,
+/* List > Card Header */ .list .list-header,
+/* List > Card Header > Text */ .list .list-header .list-header-name,
+/* Button: "Add a card" */ a.open-card-composer,
+/* "Create new board." */ a.board-tile.mod-add,
+/* Window Overlay */ div.window-overlay div.window .window-cover,
+/* Board buttons */ a.boards-page-board-section-header-options-item,
+/* Board buttons Text */ a.boards-page-board-section-header-options-item:hover span,
+/* Create a new team... */ div.boards-page-board-section a.quiet-button ,
 div.tabbed-pane-nav li.tabbed-pane-nav-item a.tabbed-pane-nav-item-button,
 /* Profile - Tab Area */ div.tabbed-pane-main-col,
 .tabbed-pane-header a.button-link,
@@ -58,17 +60,18 @@ form.js-profile-form input, form.js-profile-form textarea,
 
 /* -- Layer 2 -- */
 Layer-2,
-a.header-btn /* Header Button */,
-div.list div.list-card /* List Card */,
-a.list-header-menu-icon /* Button: "..." */,
-a.open-card-composer:hover /* Button: "Add a card"  */,
-div.window-overlay div.window /* Window Overlay */,
-input.header-search-input /* Header Search */,
-.boards-drawer /* Boards */,
-a.board-tile.mod-add:hover /* "Create new board." */,
-a.boards-page-board-section-header-options-item:hover /* Board buttons */,
+/* Header Button */ a.header-btn,
+/* List Card */ .list .list-card,
+/* List Card Title */ .list .list-card .list-card-title,
+/* Button: "..." */ a.list-header-menu-icon ,
+/* Button: "Add a card"  */ a.open-card-composer:hover ,
+/* Window Overlay */ div.window-overlay div.window,
+/* Header Search */ input.header-search-input ,
+/* Boards */ .boards-drawer ,
+/* "Create new board." */ a.board-tile.mod-add:hover,
+/* Board buttons */ a.boards-page-board-section-header-options-item:hover,
 a.boards-page-board-section-header-options-item:hover span,
-div.boards-page-board-section a.quiet-button:hover /* Create a new team... */,
+/* Create a new team... */ div.boards-page-board-section a.quiet-button:hover,
 div.tabbed-pane-nav li.tabbed-pane-nav-item a.tabbed-pane-nav-item-button:hover , 
 a.board-tile.mod-add,
 .window-module .js-search,
@@ -103,15 +106,15 @@ form.js-profile-form input:hover, form.js-profile-form textarea:hover,
 
 /* -- Layer 3 -- */
 Layer-3,
-a.header-btn:hover /* Header Button */,
-input.header-search-input:hover /* Header Search */, 
-.list .list-card:hover /* List Card */,
-/* List Card Details (Sticker) */ .list-card.is-stickered .list-card-stickers-area,
-a.list-header-menu-icon:hover /* Button: "..." */,
-span.list-card-operation /* Button: (pencil) */,
-div.pop-over /* Pop Overs */,
-div.window a.button-link /* Window Overlay: Button Links */,
-.boards-drawer input.js-search-boards /* Board Search */,
+/* Header Button */ a.header-btn:hover,
+/* Header Search */ input.header-search-input:hover,
+/* List Card */ .list .list-card:hover ,
+/* List Card Title */ .list .list-card:hover .list-card-title,
+/* Button: "..." */ a.list-header-menu-icon:hover,
+/* Button: (pencil) */ span.list-card-operation,
+/* Pop Overs */ div.pop-over,
+/* Window Overlay: Button Links */ div.window a.button-link,
+/* Board Search */ .boards-drawer input.js-search-boards,
 .boards-drawer .quiet-button,
 a.board-tile.mod-add:hover,
 div.tabbed-pane-main-col input.js-add-email:hover,
@@ -151,7 +154,6 @@ Layer-4,
 span.list-card-operation:hover /* Button: (pencil) */,
 div.window .button-link:hover /* Window Overlay: Button Links */,
 .boards-drawer input.js-search-boards:hover /* Board Search */,
-/* List Card Details (Sticker) */ .list-card.active-card.is-stickered .list-card-stickers-area,
 .boards-drawer .sidebar-section-header-toggle-icon:hover,
 .boards-drawer a.quiet-button:hover,
 .boards-drawer-header,
@@ -160,6 +162,7 @@ a.js-new-tip:hover, a.js-tip:hover, .meta-link-list-item-link:hover,
 .window .button-link:hover,
 .window .comment-box a:hover,
 .window .confirm:hover,
+.window .card-detail-window .attachment-thumbnail:hover,
 .window .card-detail-item-add-button:hover,
 .window .dark-hover:hover .icon-sm,
 .window .js-format-help:hover,
@@ -247,11 +250,14 @@ form.js-profile-form input.js-cancel-edit-profile,
 
 /* List Card Details (Sticker) */ .list-card .list-card-details,
 /* List Card Details (Sticker) */ .list-card.is-stickered .list-card-details,
-/* List Card Details (Sticker) */ .list-card.active-card.is-stickered .list-card-details {
+/* List Card Details (Sticker) */ .list-card.active-card.is-stickered .list-card-details,
+/* Card Attachment */ .attachment-thumbnail.ui-sortable-helper, .attachment-thumbnail:hover .attachment-thumbnail-details {
 	background: none;
 }
 
-/* Card Labels */
+/* ----- ----- ----- ----- ----- ----- ----- ----- ----- -----
+   Card Labels
+   ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- */
 .card-label-red {
 	background-color: hsla(0, 100%, 50%, 0.25) !important;
 }
@@ -293,6 +299,66 @@ form.js-profile-form input.js-cancel-edit-profile,
 }
 .card-label-null {
 	background-color: hsla(0, 0%, 100%, 0.25) !important;
+}
+
+/* ----- ----- ----- ----- ----- ----- ----- ----- ----- -----
+   Card Aging
+   ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- */
+.aging-regular.aging-level-0 {
+    opacity: 1.0;
+}
+.aging-regular.aging-level-1 {
+    opacity: 0.9;
+}
+.aging-regular.aging-level-2 {
+    opacity: 0.8;
+}
+.aging-regular.aging-level-3 {
+    opacity: 0.7;
+}
+
+.aging-pirate.aging-level-0 {
+    background-image: none !important;
+    box-shadow: none;
+    opacity: 1.0;
+}
+.aging-pirate.aging-level-0.is-stickered .list-card-details,
+.aging-pirate.aging-level-0 .list-card-details {
+    background-image: none !important;
+    background-color: transparent;
+}
+
+.aging-pirate.aging-level-1 {
+    background-image: none !important;
+    box-shadow: none;
+    opacity: 0.9;
+}
+.aging-pirate.aging-level-1.is-stickered .list-card-details,
+.aging-pirate.aging-level-1 .list-card-details {
+    background-image: none !important;
+    background-color: transparent;
+}
+
+.aging-pirate.aging-level-2 {
+    background-image: none !important;
+    box-shadow: none;
+    opacity: 0.8;
+}
+.aging-pirate.aging-level-2.is-stickered .list-card-details,
+.aging-pirate.aging-level-2 .list-card-details {
+    background-image: none !important;
+    background-color: transparent;
+}
+
+.aging-pirate.aging-level-3 {
+    background-image: none !important;
+    box-shadow: none;
+    opacity: 0.7;
+}
+.aging-pirate.aging-level-3.is-stickered .list-card-details,
+.aging-pirate.aging-level-3 .list-card-details {
+    background-image: none !important;
+    background-color: transparent;
 }
 
 /* ----- ----- ----- ----- ----- ----- ----- ----- ----- -----
