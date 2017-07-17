@@ -141,8 +141,9 @@ div.tabbed-pane-main-col a.big-link:hover,
 .list .list-card .badge.is-voted,
 /* Board Menu > Add Member Button */ div.board-menu a.button-link:hover,
 /* Phenom Entry > Comment */ div.board-menu div.js-menu-action-list div.phenom div.current-comment, 
-/* Window - Title */ .window .window-title textarea.editing,
-/* Window - Description */ .window .description-content .edit textarea
+/* Window - Title */ .window .window-title textarea,
+/* Window - Description */ .window .description-content .edit textarea,
+/* Window - Checklist Item - Textarea */ div.window-overlay div.checklist-item-details.editing > div > textarea
 {
     background: hsl(0, 0%, 20%) !important;
     color: hsl(0, 0%, 80%) !important;
