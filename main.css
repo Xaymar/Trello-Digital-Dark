@@ -26,7 +26,8 @@ Digital Dark Style by Michael Fabian 'Xaymar' Dirks <info@xaymar.com>.
 Layer-0,
 /* Background */ body,
 div.tabbed-pane-header,
-div.tabbed-pane-nav {
+div.tabbed-pane-nav,
+div#content {
     background: hsl(0, 0%, 5%) !important;
     color: hsl(0, 0%, 50%) !important;
     border-color: hsl(0, 0%, 0%) !important;
