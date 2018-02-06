@@ -264,6 +264,22 @@ form.js-profile-form input.js-cancel-edit-profile,
 	border-color: transparent !important;
 }
 
+/* Card (Popover) - Expand Description */ .window .card-detail-window .card-detail-item .description-content-fade-button {
+	background: linear-gradient(180deg,
+		hsla(0, 0%, 15%, 0),
+		hsla(0, 0%, 15%, 0) 370px,
+		hsla(0, 0%, 15%, 1) 400px
+	);
+}
+.window .card-detail-window .card-detail-item .description-content-fade-button .description-content-fade-button-text {
+	background: transparent !important;
+    color: hsl(0, 0%, 70%) !important;
+}
+.window .card-detail-window .card-detail-item .description-content-fade-button .description-content-fade-button-text:hover {
+	background: transparent !important;
+    color: hsl(0, 0%, 80%) !important;
+}
+
 /* ----- ----- ----- ----- ----- ----- ----- ----- ----- -----
    Card Labels
    ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- */
