@@ -49,7 +49,7 @@ div.tabbed-pane-nav li.tabbed-pane-nav-item a.tabbed-pane-nav-item-button,
 /* Profile - Tab Area */ div.tabbed-pane-main-col,
 .tabbed-pane-header a.button-link,
 form.js-profile-form input, form.js-profile-form textarea,
-/* Board Menu */ div.board-menu,
+/* Board Menu */ div.board-menu, div.board-menu-tab-content,
 /* Board Menu > Board Navigation Buttons */ div.board-menu a.board-menu-navigation-item-link,
 /* Board Menu > Power-Ups > Counter */ div.board-menu a.board-menu-navigation-item-link span.js-enabled-power-up-count,
 /* Board Menu > Activity */ div.board-menu a.js-open-activity,
@@ -279,7 +279,9 @@ form.js-profile-form input.js-cancel-edit-profile,
 	background-color: hsl(180, 100%, 20%) !important;
 }
 .card-label-blue {
-	background-color: hsl(240, 100%, 20%) !important;
+	/* Deep Blue has poor visibility in browsers, especially next to grays. */
+	/*background-color: hsl(240, 100%, 20%) !important;*/
+	background-color: hsl(220, 100%, 30%) !important;
 }
 .card-label-purple {
 	background-color: hsl(270, 100%, 20%) !important;
@@ -294,7 +296,7 @@ form.js-profile-form input.js-cancel-edit-profile,
 	background-color: hsl(0, 0%, 0%) !important;
 }
 .card-label-null {
-	background-color: hsl(0, 0%, 20%) !important;
+	background-color: hsl(0, 0%, 30%) !important;
 }
 
 /* ----- ----- ----- ----- ----- ----- ----- ----- ----- -----
