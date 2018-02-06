@@ -36,9 +36,11 @@ div#classic-body {
 /* -- Layer 1 -- */
 Layer-1,
 /* Header */ div#header,
+/* Add List */ div.js-add-list,
+/* Add List */ div.js-add-list.is-idle span.placeholder,
 /* List */ .list,
-/* List > Card Header */ .list .list-header,
-/* List > Card Header > Text */ .list .list-header .list-header-name,
+/* List > Header */ .list .list-header,
+/* List > Header > Text */ .list .list-header .list-header-name,
 /* Button: "Add a card" */ a.open-card-composer,
 /* "Create new board." */ a.board-tile.mod-add,
 /* Window Overlay */ div.window-overlay div.window .window-cover,
@@ -62,6 +64,7 @@ form.js-profile-form input, form.js-profile-form textarea,
 /* -- Layer 2 -- */
 Layer-2,
 /* Header Button */ a.header-btn,
+/* Add List */ div.js-add-list:not(.is-idle) input.list-name-input,
 /* List Card */ .list .list-card,
 /* List Card Title */ .list .list-card .list-card-title,
 /* Button: "..." */ a.list-header-menu-icon ,
@@ -255,6 +258,10 @@ form.js-profile-form input.js-cancel-edit-profile,
 /* List Card Details (Sticker) */ .list-card.active-card.is-stickered .list-card-details,
 /* Card Attachment */ .attachment-thumbnail.ui-sortable-helper, .attachment-thumbnail:hover .attachment-thumbnail-details {
 	background: none;
+}
+
+/* List > Header > Text */ .list .list-header .list-header-name:not(.is-editing) {
+	border-color: transparent !important;
 }
 
 /* ----- ----- ----- ----- ----- ----- ----- ----- ----- -----
