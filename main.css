@@ -147,7 +147,10 @@ div.tabbed-pane-main-col a.big-link:hover,
 /* Phenom Entry > Comment */ div.board-menu div.js-menu-action-list div.phenom div.current-comment, 
 /* Window - Title */ .window .window-title textarea,
 /* Window - Description */ .window .description-content .edit textarea,
-/* Window - Checklist Item - Textarea */ div.window-overlay div.checklist-item-details.editing > div > textarea
+/* Window - Checklist Item - Textarea */ div.window-overlay div.checklist-item-details.editing > div > textarea,
+/* Card - Inline Code */ .window .card-detail-item code,
+/* Card - Embedded Code */ .window .card-detail-item pre,
+/* Card - Quote */ .window .card-detail-item blockquote
 {
     background: hsl(0, 0%, 20%) !important;
     color: hsl(0, 0%, 80%) !important;
@@ -174,7 +177,10 @@ a.js-new-tip:hover, a.js-tip:hover, .meta-link-list-item-link:hover,
 .phenom.mod-unread,
 /* Card - Comment - Card Link */ .phenom .comment-container a.known-service-link,
 /* Card - Description - Card Link */ .window .card-detail-item a.known-service-link,
-.list .list-card:hover .badge.is-voted
+.list .list-card:hover .badge.is-voted,
+/* Card - Inline Code */ .window .comment-container code,
+/* Card - Embedded Code */ .window .comment-container pre,
+/* Card - Quote */ .window .comment-container blockquote
 {
     background: hsl(0, 0%, 25%) !important;
     color: hsl(0, 0%, 90%) !important;
@@ -205,6 +211,10 @@ a:hover /* Links */,
 .window .card-detail-edit .field,
 .window .comment-box .comment-box-input {
     color: hsl(0, 0%, 95%) !important;
+}
+
+.button-link {
+	box-shadow: 0 1px 0 0 rgba(0, 0, 0, 0.5) !important
 }
 
 .compact-board-tile-fade {
@@ -278,6 +288,14 @@ form.js-profile-form input.js-cancel-edit-profile,
 .window .card-detail-window .card-detail-item .description-content-fade-button .description-content-fade-button-text:hover {
 	background: transparent !important;
     color: hsl(0, 0%, 80%) !important;
+}
+
+/* Card - Quote */ .window .card-detail-item blockquote {
+	border-left: 5px rgba(0,0,0,0.5) solid !important;
+}
+
+.window .comment-container .action-comment {
+	box-shadow: none !important;
 }
 
 /* ----- ----- ----- ----- ----- ----- ----- ----- ----- -----
