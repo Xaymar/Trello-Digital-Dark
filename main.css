@@ -156,6 +156,29 @@ div.tabbed-pane-main-col a.big-link:hover,
     color: hsl(0, 0%, 80%) !important;
     border-color: hsl(0, 0%, 15%) !important;
 }
+/* Card - Checklist Item - Complete */ .window .checklist-item.checklist-item-state-complete {
+    opacity: 0.3;
+}
+/* Card - Checklist Item - Complete:hover */ .window .checklist-item.checklist-item-state-complete:hover {
+    opacity: 0.8;
+}
+/* Card - Checklist Item - Complete:hover - Links */.checklist .checklist-item-state-complete:hover .checklist-item-details-text a{
+    text-decoration:  underline;
+}
+/* Card - Checklist Item - Code */ .window span.checklist-item-details-text.markeddown.js-checkitem-name code,
+.window span.checklist-item-details-text.markeddown.js-checkitem-name pre {
+    background: inherit;
+    border: none;
+    color: #af5246;
+}
+/* Card - Checklist Item - Complete - Text */.checklist .checklist-item-state-complete .checklist-item-details-text {
+    text-decoration:  none;
+    color: inherit !important;
+}
+/* Card - Checklist Item - Complete - Links */.checklist .checklist-item-state-complete .checklist-item-details-text a {
+    text-decoration:  none;
+}
+
 
 /* -- Layer 4 -- */
 Layer-4,
