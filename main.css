@@ -108,6 +108,10 @@ form.js-profile-form input:hover, form.js-profile-form textarea:hover,
     border-color: hsl(0, 0%, 10%) !important;
 }
 
+/* List Card */ .list .list-card {
+    box-shadow: 0 1px 0 #111 !important;
+}
+
 /* -- Layer 3 -- */
 Layer-3,
 /* Header Button */ a.header-btn:hover,
