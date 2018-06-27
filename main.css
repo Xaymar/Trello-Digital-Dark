@@ -55,7 +55,12 @@ form.js-profile-form input, form.js-profile-form textarea,
 /* Board Menu > Board Navigation Buttons */ div.board-menu a.board-menu-navigation-item-link,
 /* Board Menu > Power-Ups > Counter */ div.board-menu a.board-menu-navigation-item-link span.js-enabled-power-up-count,
 /* Board Menu > Activity */ div.board-menu a.js-open-activity,
-/* Board Page > Tile */ .board-tile {
+/* Board Page > Tile */ .board-tile,
+/* Home > Buttons */ li[class^="app-scripts-views-home-presentational-tab"] > a,
+/* Home > Buttons */ li[class^="app-scripts-views-home-presentational-tab"] > button,
+/* Home > Buttons */ div[class^="app-scripts-views-home-presentational-highlight"],
+/* Home > Starred/Viewed/Links  */ .home-board-section-item:hover
+{
     background: hsl(0, 0%, 10%) !important;
     color: hsl(0, 0%, 60%) !important;
     border-color: hsl(0, 0%, 5%) !important;
@@ -101,14 +106,22 @@ form.js-profile-form input:hover, form.js-profile-form textarea:hover,
 /* Board Menu > Activity Entry */ div.board-menu div.js-menu-action-list div.phenom,
 /* Window - Title */ .window .window-title textarea,
 /* Window - Description */ .window .description-content,
-/* Board Page > Tile */ .board-tile:hover
+/* Board Page > Tile */ .board-tile:hover,
+/* Home > Buttons */ li[class^="app-scripts-views-home-presentational-tab"] > a:hover,
+/* Home > Buttons */ li[class^="app-scripts-views-home-presentational-tab"] > a:active,
+/* Home > Buttons */ li[class^="app-scripts-views-home-presentational-tab"] > button:hover,
+/* Home > Buttons */ li[class^="app-scripts-views-home-presentational-tab"] > button:active,
+/* Home > Highlights > Issue */ div[class^="app-scripts-views-home-presentational-highlight"] > ul > li > div,
+/* Home > Highlights > Issue */ div[class^="app-scripts-views-home-presentational-highlight"] > ul > li .canonical-card a.canonical-stretch,
+/* Home > Highlights > Comment */ div[class^="app-scripts-views-home-presentational-highlight"] > ul > li .canonical-comment > div
 {
     background: hsl(0, 0%, 15%) !important;
     color: hsl(0, 0%, 70%) !important;
     border-color: hsl(0, 0%, 10%) !important;
 }
 
-/* List Card */ .list .list-card {
+/* List Card */ .list .list-card,
+/* Highlight Area - Entries */ .member-boards-view .canonical-card a.canonical-stretch {
     box-shadow: 0 1px 0 #111 !important;
 }
 
@@ -154,7 +167,10 @@ div.tabbed-pane-main-col a.big-link:hover,
 /* Window - Checklist Item - Textarea */ div.window-overlay div.checklist-item-details.editing > div > textarea,
 /* Card - Inline Code */ .window .card-detail-item code,
 /* Card - Embedded Code */ .window .card-detail-item pre,
-/* Card - Quote */ .window .card-detail-item blockquote
+/* Card - Quote */ .window .card-detail-item blockquote,
+/* Home > Highlights > Issue */ div[class^="app-scripts-views-home-presentational-highlight"] > ul > li .canonical-card a.canonical-stretch:hover,
+/* Home > Highlights > Comment > Overflow */ div[class^="app-scripts-views-home-presentational-highlight"] > ul > li .canonical-comment > div > div > .canonical-overflow-button,
+/* Home > Highlights > Comment > Reply */ div[class^="app-scripts-views-home-presentational-highlight"] > ul > li .canonical-comment > div > div > .canonical-comment-icon-button
 {
     background: hsl(0, 0%, 20%) !important;
     color: hsl(0, 0%, 80%) !important;
@@ -184,7 +200,9 @@ a.js-new-tip:hover, a.js-tip:hover, .meta-link-list-item-link:hover,
 .list .list-card:hover .badge.is-voted,
 /* Card - Inline Code */ .window .comment-container code,
 /* Card - Embedded Code */ .window .comment-container pre,
-/* Card - Quote */ .window .comment-container blockquote
+/* Card - Quote */ .window .comment-container blockquote,
+/* Home > Highlights > Comment > Overflow */ div[class^="app-scripts-views-home-presentational-highlight"] > ul > li .canonical-comment > div > div > .canonical-overflow-button:hover,
+/* Home > Highlights > Comment > Reply*/ div[class^="app-scripts-views-home-presentational-highlight"] > ul > li .canonical-comment > div > div > .canonical-comment-icon-button:hover
 {
     background: hsl(0, 0%, 25%) !important;
     color: hsl(0, 0%, 90%) !important;
@@ -402,6 +420,24 @@ form.js-profile-form input.js-cancel-edit-profile,
 .aging-pirate.aging-level-3 .list-card-details {
     background-image: none !important;
     background-color: transparent;
+}
+
+/* ----- ----- ----- ----- ----- ----- ----- ----- ----- -----
+   Home Area
+   ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- */
+.member-boards-view {
+	background-color: transparent !important;
+}
+
+/* Home > Highlights > Issue */ div[class^="app-scripts-views-home-presentational-highlight"] > ul > li .canonical-card a.canonical-stretch > div,
+/* Home > Highlights > Comment */ div[class^="app-scripts-views-home-presentational-highlight"] > ul > li .canonical-comment > div > div,
+/* Home > Highlights > Comment */ div[class^="app-scripts-views-home-presentational-highlight"] > ul > li .canonical-comment > div > div > div > div {
+	background-color: transparent !important;
+	color: inherit !important;
+}
+
+/* Home > Starred/Viewed/Links  */ .home-board-link span > span {
+    color: hsl(0, 0%, 60%) !important;
 }
 
 /* ----- ----- ----- ----- ----- ----- ----- ----- ----- -----
