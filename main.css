@@ -233,6 +233,7 @@ a:hover /* Links */,
 .window .card-detail-edit .field,
 .window .comment-box .comment-box-input {
     color: hsl(0, 0%, 95%) !important;
+    background: transparent !important;
 }
 
 .button-link {
