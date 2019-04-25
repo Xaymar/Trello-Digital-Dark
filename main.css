@@ -27,7 +27,7 @@ Layer-0,
 /* Background */ body,
 div.tabbed-pane-header,
 div.tabbed-pane-nav,
-div#classic-body {
+div#trello-root {
     background: hsl(0, 0%, 5%) !important;
     color: hsl(0, 0%, 50%) !important;
     border-color: hsl(0, 0%, 0%) !important;
